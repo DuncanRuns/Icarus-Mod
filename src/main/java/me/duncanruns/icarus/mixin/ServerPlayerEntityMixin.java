@@ -33,17 +33,16 @@ public abstract class ServerPlayerEntityMixin extends PlayerEntity {
     @Final
     private ServerStatHandler statHandler;
 
-    private ItemStack itemStackFromString(String string,int count) throws CommandSyntaxException{
-        return new ItemStackArgumentType()
-                    .parse(new StringReader(string)).createStack(count, false);
+    private ItemStack itemStackFromString(String string, int count) throws CommandSyntaxException {
+        return new ItemStackArgumentType().parse(new StringReader(string)).createStack(count, false);
     }
 
     @Inject(at = @At("TAIL"), method = "<init>")
     private void init(CallbackInfo info) throws CommandSyntaxException {
         if (statHandler.getStat(Stats.CUSTOM.getOrCreateStat(Stats.PLAY_ONE_MINUTE)) == 0) {
             Icarus.log(Level.INFO, "New player detected, activating Icarus.");
-            ItemStack wings = itemStackFromString("minecraft:elytra{Unbreakable:1b}",1);
-            ItemStack rockets = itemStackFromString("minecraft:firework_rocket{Fireworks:{Flight:3b}}",64);
+            ItemStack wings = itemStackFromString("minecraft:elytra{Unbreakable:1b}", 1);
+            ItemStack rockets = itemStackFromString("minecraft:firework_rocket{Fireworks:{Flight:3b}}", 64);
 
             inventory.armor.set(2, wings);
             inventory.main.set(0, rockets);
