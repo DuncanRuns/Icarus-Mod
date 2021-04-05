@@ -1,0 +1,11 @@
+{
+    "required": true,
+    "package": "me.duncanruns.icarus.mixin",
+    "compatibilityLevel": "JAVA_8",
+    "mixins": ["ServerPlayerEntityMixin"],
+    "client": [],
+    "server": [],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
