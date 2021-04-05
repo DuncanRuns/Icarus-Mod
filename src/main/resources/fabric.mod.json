@@ -3,12 +3,16 @@
     "id": "icarus",
     "version": "${version}",
     "name": "Icarus",
-    "description": "Icarus Mod based off of jojoe's datapack. *NOT OFFICIALLY ALLOWED FOR ICARUS SPEEDRUNS",
+    "description": "Icarus Mod based off of jojoe's datapack. This mod's usage is allowed for submissions to speedrun.com/mc_icarus.",
     "authors": [
         "DuncanRuns"
     ],
     "contributors": [],
-    "contact": {},
+    "contact": {
+        "homepage": "https://www.speedrun.com/mc_icarus/",
+        "sources": "https://github.com/DuncanRuns/Icarus-Mod/",
+        "issues": "https://github.com/DuncanRuns/Icarus-Mod/issues"
+    },
     "license": "MIT",
     "icon": "assets/icarus/icon.png",
     "environment": "*",
