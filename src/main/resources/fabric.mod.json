@@ -1,28 +1,28 @@
 {
-  "schemaVersion": 1,
-  "id": "icarus",
-  "version": "${version}",
-  "name": "Icarus",
-  "description": "Icarus Mod based off of jojoe's datapack. *NOT OFFICIALLY ALLOWED FOR ICARUS SPEEDRUNS",
-  "authors": [
-    "DuncanRuns"
-  ],
-  "contributors": [],
-  "contact": {},
-  "license": "MIT",
-  "icon": "assets/icarus/icon.png",
-  "environment": "*",
-  "entrypoints": {
-    "main": [
-      "me.duncanruns.icarus.Icarus"
+    "schemaVersion": 1,
+    "id": "icarus",
+    "version": "${version}",
+    "name": "Icarus",
+    "description": "Icarus Mod based off of jojoe's datapack. *NOT OFFICIALLY ALLOWED FOR ICARUS SPEEDRUNS",
+    "authors": [
+        "DuncanRuns"
     ],
-    "client": [],
-    "server": []
-  },
-  "mixins": [
-    "icarus.mixins.json"
-  ],
-  "depends": {
-    "fabricloader": ">=0.11.3"
-  }
+    "contributors": [],
+    "contact": {},
+    "license": "MIT",
+    "icon": "assets/icarus/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "me.duncanruns.icarus.Icarus"
+        ],
+        "client": [],
+        "server": []
+    },
+    "mixins": [
+        "icarus.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.11.3"
+    }
 }

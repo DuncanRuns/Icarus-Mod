@@ -40,7 +40,10 @@ public abstract class ServerPlayerEntityMixin extends PlayerEntity {
     @Inject(at = @At("TAIL"), method = "<init>")
     private void init(CallbackInfo info) throws CommandSyntaxException {
         if (statHandler.getStat(Stats.CUSTOM.getOrCreateStat(Stats.PLAY_ONE_MINUTE)) == 0) {
+            
             Icarus.log(Level.INFO, "New player detected, activating Icarus.");
+
+            //Item strings copy & pasted directly from jojoe's datapack
             ItemStack wings = itemStackFromString("minecraft:elytra{Unbreakable:1b}", 1);
             ItemStack rockets = itemStackFromString("minecraft:firework_rocket{Fireworks:{Flight:3b}}", 64);
 
