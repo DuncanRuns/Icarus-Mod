@@ -27,8 +27,8 @@ public abstract class ServerPlayerEntityMixin extends PlayerEntity {
     @Final
     private ServerStatHandler statHandler;
 
-    public ServerPlayerEntityMixin(World world, BlockPos blockPos, GameProfile gameProfile) {
-        super(world, blockPos, gameProfile);
+    public ServerPlayerEntityMixin(World world, GameProfile profile) {
+        super(world, profile);
     }
 
     private ItemStack itemStackFromString(String string, int count) throws CommandSyntaxException {
