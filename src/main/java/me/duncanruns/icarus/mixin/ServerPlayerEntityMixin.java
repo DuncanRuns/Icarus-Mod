@@ -38,7 +38,7 @@ public abstract class ServerPlayerEntityMixin extends PlayerEntity {
 
     @Inject(at = @At("TAIL"), method = "<init>")
     private void init(CallbackInfo info) throws CommandSyntaxException {
-        if (statHandler.getStat(Stats.CUSTOM.getOrCreateStat(Stats.PLAY_TIME)) == 0) {
+        if (statHandler != null && statHandler.getStat(Stats.CUSTOM.getOrCreateStat(Stats.PLAY_TIME)) == 0) {
 
             Icarus.log(Level.INFO, "New player detected, activating Icarus.");
 
